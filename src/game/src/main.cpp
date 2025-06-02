@@ -1,14 +1,7 @@
-#include <iostream>
-
-#include "Window.hpp"
+#include "Render.hpp"
 
 int main() {
-    engine::Window window;
-
-    while (!window.shouldClose()) {
-        window.pullEvents();
-    }
-
-    window.close();
+    engine::Render render;
+    render.run();
     return 0;
 }
